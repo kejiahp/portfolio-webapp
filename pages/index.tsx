@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Contact from '../src/components/Contact'
 import NavBar from '../src/components/NavBar'
 import Welcome from '../src/components/Welcome'
 
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <NavBar />
       <Welcome />
+      <Contact />
     </>
   )
 }

@@ -8,7 +8,7 @@ module.exports = {
           custBlack: {
             100: "#151515",
             200: "#242424",
-            300: "#d9d9d9",
+            300: "#D9D9D9",
             400: "#FFFFFF"
           },
           custRed: "#FF6F5B"
