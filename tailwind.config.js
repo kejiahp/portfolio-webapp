@@ -13,6 +13,12 @@ module.exports = {
           },
           custRed: "#FF6F5B"
         },
+        width: {
+          '128': '32rem',
+        },
+        height: {
+          '128': '50rem',
+        }
     },
   },
   plugins: [],

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.target-con{
+    @apply relative
+}
+.target{
+    @apply bg-custBlack-100 opacity-0 absolute w-full h-full top-0 left-0 flex flex-col justify-center items-center transition-all duration-200 ease-in bg-opacity-80
+}
+.target-con:hover .target{
+    @apply opacity-100
+}
+.isError{
+    @apply focus:border-custRed
+}
+.isTrue{
+    @apply focus:border-custGreen
+}
