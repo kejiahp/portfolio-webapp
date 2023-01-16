@@ -7,7 +7,7 @@
     @apply relative
 }
 .target{
-    @apply bg-custBlack-100 opacity-0 absolute w-full h-full top-0 left-0 flex flex-col justify-center items-center transition-all duration-200 ease-in bg-opacity-80
+    @apply bg-custBlack-100 opacity-0 absolute w-full h-full top-0 left-0 lg:flex flex-col justify-center items-center transition-all duration-200 ease-in bg-opacity-80 hidden
 }
 .target-con:hover .target{
     @apply opacity-100
