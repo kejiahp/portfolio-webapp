@@ -15,6 +15,7 @@ const Welcome = () => {
           <FlatOval style='absolute top-12 md:-left-24 -left-32 -z-30'/>
           <div className="flex justify-center items-center flex-col md:block text-center md:text-left md:mt-0 mt-96">
               <section className=''>
+                <p className='text-red-500 font-bold md:text-7xl text-5xl'>This Site is Not Complete!!!!</p>
                 <p className='text-custBlack-400 font-bold md:text-7xl text-5xl'>Nice to meet you!</p>
                 <p className='text-custBlack-400 font-bold md:text-7xl text-5xl'>I’m <span className='after:h-1 after:bg-custGreen after:block  after:bottom-0 after:left-0 after:w-full after:absolute relative'>Popoola Morenikeji</span>.</p> 
               </section>
