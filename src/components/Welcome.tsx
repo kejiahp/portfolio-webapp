@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { CircleOval, FlatOval, FlatOval2 } from '../assets/NavBar/svgs'
+import { FlatOval } from '../assets/NavBar/svgs'
 import Projects from './Projects'
 import MyImage from '../assets/MyImage.png'
 
