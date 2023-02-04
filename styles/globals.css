@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #151515;
+}
 .target-con{
     @apply relative
 }
