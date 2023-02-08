@@ -8,3 +8,7 @@ export type RequestCv = {
     email: string,
     reason?: string
 }
+
+export type Spinner = {
+    loading: boolean
+}

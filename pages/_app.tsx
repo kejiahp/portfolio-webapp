@@ -4,6 +4,9 @@ import type { AppProps } from "next/app";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
+import "react-toastify/dist/ReactToastify.css";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -14,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       delay: 100,
     });
   }, []);
+  const queryClient = new QueryClient();
   return (
     <>
       <Head>
@@ -22,7 +26,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+        <ReactQueryDevtools position={"bottom-right"} />
+      </QueryClientProvider>
     </>
   );
 }

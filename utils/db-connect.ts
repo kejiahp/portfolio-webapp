@@ -1,5 +1,6 @@
 import mongoose from "mongoose"
 
+mongoose.set('strictQuery', true);
 export const connect = async () => {
     try{
         const uri = process.env.DB_URI as string

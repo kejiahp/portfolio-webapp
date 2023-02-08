@@ -22,3 +22,11 @@ body{
 .isTrue{
     @apply focus:border-custGreen
 }
+.toastProgress{
+    background-color: #00461b;
+}
+.toastBody {
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+    color: #10171D; /* #10171D */
+    font-size: 0.875rem !important;
+}
