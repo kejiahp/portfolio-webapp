@@ -9,6 +9,7 @@ const viewmore = () => {
       <NavBar />
       <RequestCV />
       <MoreProjects />
+      <NavBar />
     </>
   );
 };

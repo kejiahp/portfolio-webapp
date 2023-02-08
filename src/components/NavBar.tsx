@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { Github, Twitter, Linkedin } from "../assets/NavBar/svgs";
 
 const NavBar = () => {
   return (
-    <div className="flex md:justify-between py-5 px-12 lg:px-24 md:flex-row flex-col justify-center items-center pb-24 md:pb-8">
+    <div className="flex md:justify-between py-5 px-12 lg:px-24 md:flex-row flex-col justify-center items-center pb-24 md:pb-8 z-50 relative">
       <div className="font-bold text-3xl text-custBlack-400 cursor-pointer">
-        kejiah
+        <Link href={"/"}>kejiah</Link>
       </div>
       <div className=" flex w-48 justify-between items-center mt-5 md:mt-0">
         <a target={"_blank"} href="https://github.com/kejiahp">

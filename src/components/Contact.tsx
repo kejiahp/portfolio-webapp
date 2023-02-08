@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { Exclamation, FlatOval } from "../assets/NavBar/svgs";
 import { ContactFormInput } from "../utils/types-util";
 import NavBar from "./NavBar";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Aos from "aos";
 
 const Contact = () => {
   const schema = yup.object({
@@ -32,7 +33,10 @@ const Contact = () => {
       <FlatOval style="absolute -left-24 md:-left-1 md:bottom-44 bottom-[21rem] hidden md:block" />
       <FlatOval style="absolute -left-24 md:-left-1 md:bottom-48 bottom-[20rem] hidden md:block" />
       <FlatOval style="absolute -left-24 md:-left-1 md:bottom-52 bottom-[19rem] hidden md:block" />
-      <section className="flex md:justify-between border-b border-custBlack-400 pb-20 mb-10 pt-20 md:flex-row flex-col">
+      <section
+        className="flex md:justify-between border-b border-custBlack-400 pb-20 mb-10 pt-20 md:flex-row flex-col"
+        data-aos="fade-up-right"
+      >
         <div className="">
           <p className="md:text-7xl text-custBlack-400 font-bold md:text-left text-center text-5xl">
             Contact

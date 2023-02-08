@@ -9,7 +9,7 @@ const Welcome = () => {
   return (
     <>
       <div className="px-12 lg:px-24 mt-20 2xl:container 2xl:mx-auto">
-        <section className="relative py-1 pt-10 md:py-24">
+        <section className="relative py-1 pt-10 md:py-24" data-aos="zoom-in">
           <FlatOval style="absolute top-0 md:-left-24 -left-32 -z-30" />
           <FlatOval style="absolute top-4 md:-left-24 -left-32 -z-30" />
           <FlatOval style="absolute top-8 md:-left-24 -left-32 -z-30" />
@@ -51,7 +51,7 @@ const Welcome = () => {
 
         <section className="font-bold my-24 relative">
           <div className="border-t border-custBlack-400 lg:grid-cols-3 grid gap-10 pt-16 md:text-left md:grid-cols-2 sm:grid-cols-1 text-center">
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 HTML
               </h1>
@@ -59,7 +59,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2019} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 CSS
               </h1>
@@ -67,7 +67,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2019} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Javascript
               </h1>
@@ -75,7 +75,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2019} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 NodeJS
               </h1>
@@ -83,7 +83,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2021} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Express
               </h1>
@@ -91,7 +91,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2021} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Typescript
               </h1>
@@ -99,7 +99,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2021} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Python
               </h1>
@@ -107,7 +107,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2019} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Django
               </h1>
@@ -115,7 +115,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2020} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 NextJS
               </h1>
@@ -123,7 +123,7 @@ const Welcome = () => {
                 {new Date().getFullYear() - 2021} Years Experience
               </p>
             </div>
-            <div>
+            <div data-aos="fade">
               <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
                 Many More
               </h1>
