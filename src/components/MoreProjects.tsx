@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const MoreProjects = () => {
   return (
     <section className="font-bold my-24 relative px-12 lg:px-24 mt-20 2xl:container 2xl:mx-auto border-t border-custBlack-400">
-      <p className="my-14">
+      <p className="my-14" data-aos="fade-right">
         <span className="mb:text-5xl text-4xl md:text-left text-center text-custBlack-400 border-b-2 border-custGreen pr-2 rounded-b border-r-2">
           Skills and Experience Level
         </span>

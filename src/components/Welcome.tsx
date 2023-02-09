@@ -4,6 +4,7 @@ import { FlatOval } from "../assets/NavBar/svgs";
 import Projects from "./Projects";
 import MyImage from "../assets/MyImage.png";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 const Welcome = () => {
   return (
@@ -35,10 +36,19 @@ const Welcome = () => {
                 Tehcnologies listed below. 👇
               </p>
             </div>
-            <p className="text-custBlack-400 uppercase w-fit font-bold leading-6 mt-10 md:mt-20 after:mt-2 after:h-px after:bg-custGreen after:block after:bottom-0 after:left-0 after:w-full cursor-pointer hover:text-custGreen hover:scale-110 transition ease-in delay-100">
-              <a href="#contact">Contact Me</a>
-            </p>
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <p className="text-custBlack-400 uppercase w-fit font-bold leading-6 mt-10 md:mt-20 after:mt-2 after:h-px after:bg-custGreen after:block after:bottom-0 after:left-0 after:w-full cursor-pointer hover:text-custGreen hover:scale-110 transition ease-in delay-100">
+                Contact Me
+              </p>
+            </ScrollLink>
           </div>
+
           <div className="bg-custBlack-200 md:w-128 -z-20 md:h-128 sm:w-80 h-[44rem] md:pt-[8rem] pt-[12rem] absolute md:right-0 md:-top-[11rem] -top-80 md:mx-0 mx-auto right-0 left-0 md:left-auto bg-opacity-70 shadow-white shadow-inner">
             <Image
               className="w-full h-full object-cover"
@@ -130,7 +140,7 @@ const Welcome = () => {
               <p className="text-custBlack-300 text-xs mt-5">
                 Trust me there are alot more, can't just fit them all in the
                 page.😏🥲
-                <span className="text-custGreen underline underline-offset-4 cursor-pointer">
+                <span className="text-custGreen underline underline-offset-4 cursor-pointer text-lg">
                   <Link href={"/viewmore"}>view all skills</Link>
                 </span>
               </p>
@@ -139,13 +149,24 @@ const Welcome = () => {
         </section>
 
         <section className="mb-24 sm:border-t-2 border-custBlack-300 border-t-2 sm:border-custBlack-300 md:border-t-0 py-20">
-          <header className="flex sm:justify-between items-center mb-4 flex-col sm:flex-row">
+          <header
+            className="flex sm:justify-between items-center mb-4 flex-col sm:flex-row"
+            data-aos="fade-right"
+          >
             <p className="md:text-7xl font-bold text-custBlack-400 text-3xl">
               Projects
             </p>
-            <p className="text-custBlack-400 uppercase w-fit font-bold leading-6 after:mt-2 after:h-px after:bg-custGreen after:block after:bottom-0 after:left-0 after:w-full cursor-pointer hover:text-custGreen hover:scale-110 transition ease-in delay-100 ml-3 sm:mt-0 mt-10">
-              <a href="#contact">CONTACT ME</a>
-            </p>
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <p className="text-custBlack-400 uppercase w-fit font-bold leading-6 after:mt-2 after:h-px after:bg-custGreen after:block after:bottom-0 after:left-0 after:w-full cursor-pointer hover:text-custGreen hover:scale-110 transition ease-in delay-100 ml-3 sm:mt-0 mt-10">
+                CONTACT ME
+              </p>
+            </ScrollLink>
           </header>
           <Projects />
         </section>
