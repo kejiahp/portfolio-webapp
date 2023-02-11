@@ -19,7 +19,7 @@ const Projects = () => {
       <SingleProject
         image={MyPorfolio}
         githubLink={"https://github.com/kejiahp/portfolio-webapp"}
-        projectLink={""}
+        projectLink={"https://portfolio-webapp-lime.vercel.app/"}
         name="My Porfolio"
         techUsed={[
           "Nextjs ",
