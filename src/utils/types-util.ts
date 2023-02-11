@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export type ContactFormInput = {
     name: string,
     email: string,
@@ -12,3 +14,11 @@ export type RequestCv = {
 export type Spinner = {
     loading: boolean
 }
+
+export type SingleProject = {
+    image: StaticImageData,
+    projectLink: string,
+    githubLink: string,
+    techUsed: string[],
+    name: string
+  };
