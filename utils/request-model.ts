@@ -18,7 +18,7 @@ const RequestCvSchema = new Schema<RequestCvDocument>({
     }
 }, {timestamps: true})
 
-let RequestCvModel
+let RequestCvModel:mongoose.Model<RequestCvDocument>
 if(mongoose.models.RequestForm){
     RequestCvModel = mongoose.model("RequestForm")
 }

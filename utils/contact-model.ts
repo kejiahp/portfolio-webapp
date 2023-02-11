@@ -21,7 +21,7 @@ const ContactFormSchema = new Schema<ContactFormDocument>({
     }
 },{timestamps: true})
 
-let ContactFormModel
+let ContactFormModel:mongoose.Model<ContactFormDocument>
 if(mongoose.models.ContactForm){
     ContactFormModel = mongoose.model("ContactForm")
 }
