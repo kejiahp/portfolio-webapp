@@ -8,16 +8,21 @@ const NavBar = () => {
         <Link href={"/"}>kejiah</Link>
       </div>
       <div className=" flex w-48 justify-between items-center mt-5 md:mt-0">
-        <a target={"_blank"} href="https://github.com/kejiahp">
+        <a target={"_blank"} rel="noreferrer" href="https://github.com/kejiahp">
           <Github style="w-6 h-6 cursor-pointer hover:scale-125 transition ease-in delay-100" />
         </a>
         <a
           target={"_blank"}
+          rel="noreferrer"
           href="https://www.linkedin.com/in/morenikeji-popoola-a80257253/"
         >
           <Linkedin style="w-6 h-6 cursor-pointer hover:scale-125 transition ease-in delay-100" />
         </a>
-        <a target={"_blank"} href="https://twitter.com/kejiah_">
+        <a
+          target={"_blank"}
+          rel="noreferrer"
+          href="https://twitter.com/kejiah_"
+        >
           <Twitter style="w-6 h-6 cursor-pointer hover:scale-125 transition ease-in delay-100" />
         </a>
       </div>
