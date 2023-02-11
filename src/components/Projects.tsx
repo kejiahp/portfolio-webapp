@@ -46,7 +46,7 @@ const Projects = () => {
           "https://github.com/kejiahp/electro-electronics-store-react-app"
         }
         projectLink={""}
-        name="FaceBook ChatBot"
+        name="Electro Ecommerce Website"
         techUsed={[
           "React ",
           "React-Router ",
@@ -57,7 +57,13 @@ const Projects = () => {
 
       <div data-aos="fade-up">
         <h1 className="font-bold md:text-5xl text-3xl text-custGreen hover:text-custBlack-400 transition-all duration-200 ease-in">
-          <a href="https://github.com/kejiahp">ViEw RePOSiTOrY</a>
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href="https://github.com/kejiahp"
+          >
+            ViEw RePOSiTOrY
+          </a>
         </h1>
       </div>
     </section>
