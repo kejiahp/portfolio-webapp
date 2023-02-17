@@ -147,7 +147,7 @@ const MoreProjects = () => {
         </div>
         <div data-aos="fade">
           <h1 className="font-bold md:text-5xl text-3xl text-custGreen">
-            And More Been Learnt
+            And More Being Learnt
           </h1>
         </div>
       </div>
