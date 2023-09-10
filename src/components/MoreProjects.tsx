@@ -146,6 +146,14 @@ const MoreProjects = () => {
           </p>
         </div>
         <div data-aos="fade">
+          <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
+            React Native
+          </h1>
+          <p className="text-custBlack-300 text-xs mt-5">
+            {new Date().getFullYear() - 2022} Years Experience
+          </p>
+        </div>
+        <div data-aos="fade">
           <h1 className="font-bold md:text-5xl text-3xl text-custGreen">
             And More Being Learnt
           </h1>

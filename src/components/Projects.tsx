@@ -4,6 +4,9 @@ import MyPorfolio from "../assets/MyPorfolio.png";
 import RaveUniversal from "../assets/RaveUniversal.png";
 import MarketColonyBot from "../assets/MarketColonyBot.png";
 import ElectroEcom from "../assets/ElectroEcom.png";
+import TylerMovies from "../assets/TylerMoviesEmpire.png";
+import SequentialJobs from "../assets/SequentialJobs.png";
+import TodoList from "../assets/TodoList.png";
 
 const Projects = () => {
   return (
@@ -53,6 +56,37 @@ const Projects = () => {
           "Styled-Components ",
           "React-Query ",
         ]}
+      />
+
+      <SingleProject
+        image={TylerMovies}
+        githubLink={""}
+        projectLink={"https://tylermoviesempire.com"}
+        name="Tyler Movies Website"
+        techUsed={["React ", "Nextjs ", "Tailwind ", "Mongoose ", "MongoDB"]}
+      />
+
+      <SingleProject
+        image={SequentialJobs}
+        githubLink={""}
+        projectLink={""}
+        name="Sequential Jobs"
+        techUsed={[
+          "React ",
+          "Nextjs ",
+          "Stitches ",
+          "Django ",
+          "Postgres ",
+          "Django Rest Framework",
+        ]}
+      />
+
+      <SingleProject
+        image={TodoList}
+        githubLink={"https://github.com/kejiahp/date-filtered-todo-list"}
+        projectLink={"https://date-filtered-todo-list.up.railway.app"}
+        name="ToDo List"
+        techUsed={["React ", "Tailwind "]}
       />
 
       <div data-aos="fade-up">
