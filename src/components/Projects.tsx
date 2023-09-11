@@ -7,6 +7,7 @@ import ElectroEcom from "../assets/ElectroEcom.png";
 import TylerMovies from "../assets/TylerMoviesEmpire.png";
 import SequentialJobs from "../assets/SequentialJobs.png";
 import TodoList from "../assets/TodoList.png";
+import EmetricsSuite from "../assets/EmetricsSuite.png";
 
 const Projects = () => {
   return (
@@ -87,6 +88,14 @@ const Projects = () => {
         projectLink={"https://date-filtered-todo-list.up.railway.app"}
         name="ToDo List"
         techUsed={["React ", "Tailwind "]}
+      />
+
+      <SingleProject
+        image={EmetricsSuite}
+        githubLink={""}
+        projectLink={"https://emetricsuite.com"}
+        name="Emetrics Suite"
+        techUsed={["React ", "Nextjs ", "Stiches "]}
       />
 
       <div data-aos="fade-up">
