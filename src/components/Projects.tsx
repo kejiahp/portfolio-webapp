@@ -12,6 +12,10 @@ import KilogramChatApp from "../assets/KilogramChatApp.png";
 import ManHouse from "../assets/ManHouse.png";
 import TomationSolution from "../assets/TomationSolution.png";
 
+import HubeatzBuyer from "../assets/HubeatzBuyer.png";
+import HubeatzSeller from "../assets/HubeatzSeller.png";
+import HubeatzAdmin from "../assets/HubeatzAdmin.png";
+
 const Projects = () => {
   return (
     <>
@@ -23,6 +27,62 @@ const Projects = () => {
         Collaborative Project Contributions
       </h1>
       <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-4">
+        <SingleProject
+          image={HubeatzBuyer}
+          githubLink={""}
+          projectLink={"https://www.hubeatz.com"}
+          name="Hubeatz"
+          techUsed={[
+            "React ",
+            "NextJs ",
+            "Next Auth ",
+            "Taiwlind Css ",
+            "Zustand ",
+            "Redux Tool Kit ",
+            "Axios ",
+            "React Query ",
+            "Zod ",
+          ]}
+        />
+
+        <SingleProject
+          image={HubeatzSeller}
+          githubLink={""}
+          projectLink={"https://seller.hubeatz.com"}
+          name="Hubeatz Seller"
+          techUsed={[
+            "React ",
+            "NextJs ",
+            "Next Auth ",
+            "ReCharts",
+            "Taiwlind Css ",
+            "Zustand ",
+            "Redux Tool Kit ",
+            "Axios ",
+            "React Query ",
+            "Zod ",
+          ]}
+        />
+
+        <SingleProject
+          image={HubeatzAdmin}
+          githubLink={""}
+          projectLink={"https://admin.hubeatz.com"}
+          name="Hubeatz Admin"
+          techUsed={[
+            "React ",
+            "NextJs ",
+            "Next Auth ",
+            "ReCharts",
+            "Taiwlind Css ",
+            "Zustand ",
+            "Redux Tool Kit ",
+            "Axios ",
+            "React Query ",
+            "Zod ",
+          ]}
+        />
+
         <SingleProject
           image={TomationSolution}
           githubLink={""}
