@@ -9,12 +9,15 @@ import SequentialJobs from "../assets/SequentialJobs.png";
 import TodoList from "../assets/TodoList.png";
 import EmetricsSuite from "../assets/EmetricsSuite.png";
 import KilogramChatApp from "../assets/KilogramChatApp.png";
+import KilogramBackend from "../assets/KilogramBackend.png";
 import ManHouse from "../assets/ManHouse.png";
 import TomationSolution from "../assets/TomationSolution.png";
 
 import HubeatzBuyer from "../assets/HubeatzBuyer.png";
 import HubeatzSeller from "../assets/HubeatzSeller.png";
 import HubeatzAdmin from "../assets/HubeatzAdmin.png";
+
+import WalletBackend from "../assets/WalletBackend.png";
 
 const Projects = () => {
   return (
@@ -179,9 +182,38 @@ const Projects = () => {
             "React ",
             "Nextjs ",
             "Tailwind ",
-            "Socket.io",
-            "Zod",
-            "SWR",
+            "Socket.io ",
+            "Zod ",
+            "SWR ",
+          ]}
+        />
+
+        <SingleProject
+          image={KilogramBackend}
+          githubLink={"https://github.com/kejiahp/nodejs-realtime-chatapp"}
+          projectLink={""}
+          name="Kilogram Realtime Chatting Backend API"
+          techUsed={[
+            "Nodejs ",
+            "Express ",
+            "MongoDB ",
+            "Socket.io ",
+            "Mongoose ",
+          ]}
+        />
+
+        <SingleProject
+          image={WalletBackend}
+          githubLink={"https://github.com/kejiahp/wallet-management-system"}
+          projectLink={""}
+          name="Wallet Management System Backend API"
+          techUsed={[
+            "Nestjs ",
+            "Docker ",
+            "Prisma ",
+            "Postgresql ",
+            "Paystack ",
+            "GitHub Workflows ",
           ]}
         />
 
