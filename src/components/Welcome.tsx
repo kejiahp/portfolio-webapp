@@ -30,10 +30,10 @@ const Welcome = () => {
             </section>
             <div className="md:w-2/6 mt-8">
               <p className="text-custBlack-300 text-lg leading-7 mt-10 md:mt-0">
-                Based in the Nigerian, I’m a Highly motivated Software Engineer
-                passionate about building accessible web apps that users love.
-                Highly skilled in Fullstack Software Development using the
-                Tehcnologies listed below. 👇
+                I’m a Highly motivated Software Engineer passionate about
+                building accessible web apps that users love. Highly skilled in
+                Fullstack Software Development using the Tehcnologies listed
+                below.👇
               </p>
             </div>
             <ScrollLink
