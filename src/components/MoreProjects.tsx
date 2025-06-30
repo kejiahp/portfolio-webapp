@@ -1,6 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useCallback } from "react";
 
 const MoreProjects = () => {
+  const koltinYearLearnt = useCallback((year: number) => {
+    const curYear = new Date().getFullYear();
+    const showMonths = curYear - year <= 0;
+    if (showMonths) {
+      return {
+        showMonths,
+        value: new Date().getMonth(),
+        // new Intl.DateTimeFormat("en", { month: "long" }).format(
+        //   new Date(year, new Date().getMonth())
+        // ),
+      };
+    } else {
+      return { showMonths, value: new Date().getFullYear() - year };
+    }
+  }, []);
   return (
     <section className="font-bold my-24 relative px-12 lg:px-24 mt-20 2xl:container 2xl:mx-auto border-t border-custBlack-400">
       <p className="my-14" data-aos="fade-right">
@@ -137,6 +152,18 @@ const MoreProjects = () => {
             {new Date().getFullYear() - 2020} Years Experience
           </p>
         </div>
+
+        <div data-aos="fade">
+          <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
+            FastAPI
+          </h1>
+          <p className="text-custBlack-300 text-xs mt-5">
+            {koltinYearLearnt(2025).showMonths
+              ? `${koltinYearLearnt(2025).value} Months of Experience`
+              : `${koltinYearLearnt(2025).value} Years Experience`}
+          </p>
+        </div>
+
         <div data-aos="fade">
           <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
             NextJS
@@ -188,6 +215,28 @@ const MoreProjects = () => {
           </h1>
           <p className="text-custBlack-300 text-xs mt-5">
             {new Date().getFullYear() - 2022} Years Experience
+          </p>
+        </div>
+
+        <div data-aos="fade">
+          <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
+            Kotlin
+          </h1>
+          <p className="text-custBlack-300 text-xs mt-5">
+            {koltinYearLearnt(2025).showMonths
+              ? `${koltinYearLearnt(2025).value} Months of Experience`
+              : `${koltinYearLearnt(2025).value} Years Experience`}
+          </p>
+        </div>
+
+        <div data-aos="fade">
+          <h1 className="font-bold md:text-5xl text-3xl text-custBlack-400">
+            Jetpack Compose
+          </h1>
+          <p className="text-custBlack-300 text-xs mt-5">
+            {koltinYearLearnt(2025).showMonths
+              ? `${koltinYearLearnt(2025).value} Months of Experience`
+              : `${koltinYearLearnt(2025).value} Years Experience`}
           </p>
         </div>
 

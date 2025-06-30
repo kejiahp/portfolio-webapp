@@ -1,5 +1,8 @@
 import React from "react";
 import SingleProject from "./SingleProject";
+import EcomAppBackend from "../assets/EcomAppBackend.png";
+import Cleverwaters from "../assets/Cleverwaters.png";
+import SprunggImg from "../assets/Sprungg.png";
 import MyPorfolio from "../assets/MyPorfolio.png";
 import RaveUniversal from "../assets/RaveUniversal.png";
 import MarketColonyBot from "../assets/MarketColonyBot.png";
@@ -12,6 +15,7 @@ import KilogramChatApp from "../assets/KilogramChatApp.png";
 import KilogramBackend from "../assets/KilogramBackend.png";
 import ManHouse from "../assets/ManHouse.png";
 import TomationSolution from "../assets/TomationSolution.png";
+import EcomApp from "../assets/EcomApp.png";
 
 import HubeatzBuyer from "../assets/HubeatzBuyer.png";
 import HubeatzSeller from "../assets/HubeatzSeller.png";
@@ -30,6 +34,39 @@ const Projects = () => {
         Collaborative Project Contributions
       </h1>
       <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-4">
+        <SingleProject
+          image={SprunggImg}
+          githubLink=""
+          projectLink={"https://sprungg.co/en"}
+          name="Sprungg"
+          techUsed={[
+            "Typescript/Javascript",
+            "MongoDB",
+            "ExpressJs",
+            "NextJs",
+            "Lexical",
+            "Tailwindcss",
+            "GitHub API",
+          ]}
+        />
+
+        <SingleProject
+          image={Cleverwaters}
+          githubLink=""
+          projectLink={"https://www.cleverwaters.com/"}
+          name="Cleverwaters"
+          techUsed={[
+            "Htmx",
+            "Python",
+            "Javascript",
+            "Django",
+            "Alpine.js",
+            "Flowbite",
+            "tailwindcss",
+            "Pythonanywhere",
+          ]}
+        />
+
         <SingleProject
           image={HubeatzBuyer}
           githubLink={""}
@@ -157,6 +194,38 @@ const Projects = () => {
         Personal Projects
       </h1>
       <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+        <SingleProject
+          image={EcomAppBackend}
+          githubLink="https://github.com/kejiahp/fastapi-ecom-recommendation-system"
+          projectLink={
+            "https://fastapi-ecom-recommendation-syst-production.up.railway.app"
+          }
+          name="Advanced recommendation system for e-commerce applications"
+          techUsed={[
+            "Python",
+            "MongoDB",
+            "FastAPI",
+            "Motor",
+            "scikit-learn",
+            "scikit-surprise",
+            "Pydantic",
+          ]}
+        />
+
+        <SingleProject
+          image={EcomApp}
+          githubLink="https://github.com/kejiahp/kotlin-jetpack-ecom-recommendation-system"
+          projectLink={""}
+          name="Mobile application interacting with a recommendation system for e-commerce apps"
+          techUsed={[
+            "Kotlin",
+            "Jetpack Compose",
+            "Dagger Hilt",
+            "Retrofit2",
+            "StateFlow",
+          ]}
+        />
+
         <SingleProject
           image={MyPorfolio}
           githubLink={"https://github.com/kejiahp/portfolio-webapp"}

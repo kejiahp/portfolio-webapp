@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { SingleProject } from "../utils/types-util";
+import { TSingleProject } from "../utils/types-util";
 
-const SingleProject: React.FC<SingleProject> = ({
+const SingleProject: React.FC<TSingleProject> = ({
   name,
   techUsed,
   image,
@@ -12,7 +12,17 @@ const SingleProject: React.FC<SingleProject> = ({
   return (
     <div data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div className="target-con cursor-pointer">
-        <Image className="w-full" src={image} alt="Project Image" priority />
+        <div className="relative overflow-hidden w-full h-[300px]">
+          <Image
+            className="object-contain"
+            fill
+            src={image}
+            sizes="(max-width: 768px) 50vw,33vw (min-width: 1024px) 70wv"
+            alt="Project Image"
+            priority
+          />
+        </div>
+
         <div className="target">
           <span className="text-custBlack-400 relative after:block after:w-full after:bottom-0 after:bg-custGreen after:absolute after:left-0 after:h-px text-sm tracking-widest font-bold mt-4 hover:text-custGreen ease-in transition duration-200">
             {projectLink && (
@@ -30,12 +40,16 @@ const SingleProject: React.FC<SingleProject> = ({
           </span>
         </div>
       </div>
-      <h1 className="font-bold text-xl text-custBlack-400 mt-2">{name}</h1>
-      {techUsed.map((item, index) => (
-        <span className="text-custBlack-300 text-sm mt-5" key={index}>
-          {item}
-        </span>
-      ))}
+      <h1 className="overflow-hidden text-ellipsis font-bold text-xl text-custBlack-400 mt-2">
+        {name}
+      </h1>
+      <div className="overflow-hidden text-ellipsis">
+        {techUsed.map((item, index) => (
+          <span className="text-custBlack-300 text-sm mt-5" key={index}>
+            {`${item} `}
+          </span>
+        ))}
+      </div>
       <div className="flex lg:hidden ">
         <p className="text-custBlack-400 uppercase w-fit font-bold leading-6 mt-4 after:mt-2 after:h-px after:bg-custGreen after:block after:bottom-0 after:left-0 after:w-full cursor-pointer hover:text-custGreen hover:scale-110 transition ease-in delay-100">
           {projectLink && (
