@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FlatOval } from "../assets/NavBar/svgs";
 import Projects from "./Projects";
-import MyImage from "../assets/MyImage.png";
+import MyImage from "../assets/MyImage2.png";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -51,7 +51,7 @@ const Welcome = () => {
 
           <div className="bg-custBlack-200 md:w-128 -z-20 md:h-128 sm:w-80 h-[44rem] md:pt-[8rem] pt-[12rem] absolute md:right-0 md:-top-[11rem] -top-80 md:mx-0 mx-auto right-0 left-0 md:left-auto bg-opacity-70 shadow-white shadow-inner">
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               priority
               alt="Morenikeji's Number"
               src={MyImage}

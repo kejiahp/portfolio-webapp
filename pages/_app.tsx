@@ -29,7 +29,20 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Welcome to Morenikeji Popoola's (Elijah) website, created for a basic introduction of myself and my passion for programming and software development. Through the site you can contact me for work and collaboration projects and you can request my CV."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon_32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon_16x16.png"
+          sizes="16x16"
+        />
       </Head>
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
